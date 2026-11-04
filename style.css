@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.music-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    height: 100px;
+}
+
+.bar{
+    display: block;
+    width: 18px;
+    height: 64px;
+    border-radius: 10px;
+    animation: musicWave 1s ease-in-out infinite;
+}
+
+.bar1{
+    background: #ed0037;
+    animation-delay: 0s;
+}
+
+.bar2{
+    background: #15d5b5;
+    animation-delay:0.12s;
+}
+
+.bar3{
+    background: #611dcf;
+    animation-delay: 0.24s;
+}
+.bar4 {
+    background: #d00045;
+    animation-delay: 0.36s;
+}
+
+.bar5 {
+    background: #b9ba68;
+    animation-delay: 0.48s;
+}
+
+@keyframes musicWave{
+    0% , 100%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.25);
+    }
+}
+
+.music-text{
+    margin-top: 18px;
+    font-family: arial , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: #333333;
+}
